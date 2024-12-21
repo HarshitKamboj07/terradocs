@@ -13,3 +13,9 @@ variable "location" {
   description = "Azure region location"
   default     = "eastus"
 }
+
+variable "additional_tags" {
+  type        = map(string)
+  description = "Additional tags for the storage account"
+  default     = {}
+}
